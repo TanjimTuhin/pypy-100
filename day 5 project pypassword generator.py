@@ -39,8 +39,25 @@ print(password_list)
 random.shuffle(password_list)
 print(password_list)
 
+# Join the list to form the final password string
+#password = ''.join(password_list)
+#or
+
 password = ""
 for char in password_list:
   password += char
 
+# Password strength check based on length
+def password_strength(password):
+    length = len(password)
+    if length < 6:
+        return "Weak"
+    elif 6 <= length <= 10:
+        return "Moderate"
+    else:
+        return "Strong"
+
+# Display the password and its strength
 print(f"Your password is: {password}")
+print(f"Password strength: {password_strength(password)}")
+
