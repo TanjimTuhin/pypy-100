@@ -3,6 +3,7 @@ name1 = input() # What is your name?
 name2 = input() # What is their name?
 # 🚨 Don't change the code above 👆
 # Write your code below this line 👇
+#love calculator
 
 combined_name=name1+name2
 lowercase=combined_name.lower()

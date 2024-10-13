@@ -3,7 +3,7 @@ height = float(input())
 # Enter your weight in kilograms e.g., 72
 weight = int(input())
 # 🚨 Don't change the code above 👆
-
+#ok
 #Write your code below this line 👇
 bmi=weight/(height**2)
 bmi=float(bmi)
