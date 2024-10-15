@@ -14,7 +14,8 @@ def dream(name):
     print(f"Hello, {name}!")
     print(f"Welcome to the dream world!")
     print(f"You are a {name} in this world!")
-
+    print(f"Have a nice dream, {name}!")
+    print(f"Goodbye, {name}!")
 dream('Devops')
 
 #function with more than 1 input
