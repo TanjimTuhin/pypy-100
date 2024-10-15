@@ -18,7 +18,9 @@ def dream(name):
 dream('Devops')
 
 #function with more than 1 input
-def greet(name, age):
+
+def greet(name, age, adress):
     print(f"Hello, {name}!")
     print(f"You are {age} years old.")
-greet('Devops', 25)
+    print(f"You live in {adress}.")
+greet('Devops', 25 , 'jessore')
