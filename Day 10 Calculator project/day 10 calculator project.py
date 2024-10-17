@@ -24,20 +24,25 @@ operations={
     "*":mul,
     "/":div
 }
+from art import logo
+def calculator():
+    print(logo) 
+    num1=int(input("what's the number?: "))
+    for symbol in operations:
+        print(symbol)
+    should_continue=True
+    while should_continue:
+        operation_symbol=input('Pick an operation right above:')
+        num2=int(input("what's the next number?: "))
 
-num1=int(input("what's the first number?: "))
-for symbol in operations:
-    print(symbol)
-operation_symbol=input('Pick an operation right above:')
-num2=int(input("what's the second number?: "))
+        calculation_function=operations[operation_symbol]
+        answer=calculation_function(num1,num2)
 
-calculation_function=operations[operation_symbol]
-answer=calculation_function(num1,num2)
+        print(f'{num1}{operation_symbol}{num2}={answer}')
 
-print(f'{num1}{operation_symbol}{num2}={answer}')
-
-operation_symbol=input('Pick an another operation:')
-num3=int(input("what's the second number?: "))
-calculation_function=operations[operation_symbol]
-second_answer=calculation_function(answer,num3)
-print(f'{answer}{operation_symbol}{num3}={second_answer}')
+        if input('write "y" to continue or write "n" to new calculator')=='y':
+            num1=answer
+        else:
+            should_continue=False
+            calculator()
+calculator()
