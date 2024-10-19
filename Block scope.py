@@ -7,4 +7,4 @@ def game():
 
     print(new_enemy) #in block -> will work
 
-print(new_enemy) #out of block -> won't work
+#print(new_enemy) #out of block -> won't work
