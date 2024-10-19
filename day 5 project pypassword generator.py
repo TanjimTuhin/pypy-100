@@ -56,7 +56,7 @@ def password_strength(password):
         return "Moderate"
     else:
         return "Strong"
-
+#
 # Display the password and its strength
 print(f"Your password is: {password}")
 print(f"Password strength: {password_strength(password)}")
