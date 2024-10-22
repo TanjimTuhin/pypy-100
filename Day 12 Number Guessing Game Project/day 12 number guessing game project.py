@@ -5,8 +5,7 @@ print('Welcome to the gussing Game!')
 print("I'm thinking of number between 1 to 100")
 import random
 answer=random.randint(1,100)
-print(f'pssst,the correct answer {answer}')
-
+#print(f'pssst,the correct answer {answer}')
 
 
 easy_level=10
