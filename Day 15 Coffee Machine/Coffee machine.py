@@ -82,9 +82,5 @@ while True:
         print(f'Here is your ${total_cost:.2f}')
 
 
-    #Do :check money, if sufficient then process
-    #Do :make coffee
-
-
 
 
