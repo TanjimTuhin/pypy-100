@@ -50,10 +50,13 @@ while True:
                     print('Ingradient Available')
                 else:
                     print('Not enough coffee')
+                    break
             else:
                 print('Not enough milk')
+                break
         else:
             print('Not enough water')
+            break
     else:
         print('Invalid Selection')
     cost=MENU[flavour]["cost"]
